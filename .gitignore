@@ -1,0 +1,28 @@
+
+# Dependencies
+/node_modules
+/client/node_modules
+/server/node_modules
+
+# Build files
+/client/build
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Other
+.DS_Store
+backend_url.txt
+frontend_url.txt
+ngrok.yml
+ngrok1.yml
+ngrok2.yml

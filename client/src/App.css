@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.blogs-container {
+  padding: 20px;
+}
+
+.blog-post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+}

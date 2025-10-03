@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "My First Blog Post",
+    "author": "Likhon Sheikh",
+    "content": "This is my very first blog post. I am so excited to share my thoughts with the world."
+  },
+  {
+    "id": 2,
+    "title": "My Second Blog Post",
+    "author": "Likhon Sheikh",
+    "content": "This is my second blog post. I am getting the hang of this blogging thing."
+  }
+]
