@@ -1,5 +1,6 @@
 {
-  "installCommand": "npm install",
+  "installCommand": "npm install --prefix client",
+  "buildCommand": "npm run build --prefix client",
   "rewrites": [
     {
       "source": "/api/:match*",
