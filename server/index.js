@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('/api/blogs', (req, res) => {
-  fs.readFile('blogs.json', 'utf8', (err, data) => {
+  fs.readFile(path.join(__dirname, 'blogs.json'), 'utf8', (err, data) => {
     if (err) {
       console.error(err);
       res.status(500).send('Error reading blogs data');
