@@ -3,14 +3,18 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const helmet = require('helmet');
+const compression = require('compression');
 
 const app = express();
 const port = 5000;
 
+app.use(helmet());
+app.use(compression());
 app.use(cors());
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../client/build'), { maxAge: '1y' }));
 
 app.get('/api/blogs', (req, res) => {
   fs.readFile(path.join(__dirname, 'blogs.json'), 'utf8', (err, data) => {
